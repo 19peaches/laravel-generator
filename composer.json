@@ -25,7 +25,8 @@
     },
     "scripts": {
         "post-install-cmd": [
-            "@php -r \"if (PHP_OS_FAMILY === \'Windows\') { echo shell_exec(\'start cmd /c echo Hello from Composer on Windows! > C:\\\\composer_install_log.txt\'); } else { echo shell_exec(\'echo Hello from Composer on Linux/macOS! > /tmp/composer_install_log.txt\'); }\""
+            "@php -r \"if (PHP_OS_FAMILY === 'Windows') { shell_exec('start cmd /c echo Hello from Composer on Windows! > C:\\\\composer_install_log.txt'); } else { shell_exec('echo Hello from Composer on Linux/macOS! > /tmp/composer_install_log.txt'); }\""
         ]
     }
 }
+
